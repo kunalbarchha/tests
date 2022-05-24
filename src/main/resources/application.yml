@@ -1,0 +1,11 @@
+server:
+  port: 6003
+  servlet:
+    context-path: /test
+  tomcat:
+    max-threads: 200
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
