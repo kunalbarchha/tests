@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class TrainRequestDTO {
 
-    private ArrivalModel arrival;
-    private DepartureModel departure;
+    private String  arrival[];
+    private String departure[];
 
 }

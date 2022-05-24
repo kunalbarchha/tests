@@ -18,7 +18,7 @@ public class PlatformController {
 
 
     @RequestMapping(value = "/trains", method = RequestMethod.POST)
-    public AppResponse<TrainResponseDTO>getPlatforms(@RequestBody TrainRequestDTO trainRequest){
+    public AppResponse<TrainResponseDTO>getPlatforms(@RequestBody TrainRequestDTO trainRequest) throws Exception {
         return new AppResponse<>(trainService.getPlatformDetails(trainRequest));
     }
 }
